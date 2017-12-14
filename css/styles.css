@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css?family=Oxygen:400,700");
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Oxygen', sans-serif;
+  color: #3e3e3e; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* close commented backslash hack */
+.wrapper {
+  width: 80%;
+  max-width: 1170px;
+  margin: 2em auto; }
+
+nav {
+  background-color: #1dbfa0;
+  clear: both;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-transition: position 10s;
+  -moz-transition: position 10s;
+  -ms-transition: position 10s;
+  -o-transition: position 10s;
+  transition: position 10s; }
+  nav img {
+    float: left;
+    width: 55px;
+    margin: 15px; }
+  nav ul {
+    display: none;
+    float: right;
+    margin: 30px 25px 0 0; }
+    nav ul li {
+      display: inline;
+      color: #fff;
+      margin: 0 0 0 15px; }
+
+.navbar-fixed {
+  background-color: rgba(29, 191, 160, 0.95);
+  display: none;
+  top: 0 !important;
+  z-index: 999999;
+  position: fixed !important;
+  width: 100%;
+  animation: smoothScroll .5s forwards; }
+  .navbar-fixed img {
+    width: 45px;
+    margin: 10px 15px; }
+  .navbar-fixed ul {
+    margin: 24px 25px 0 0; }
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px); }
+  100% {
+    transform: translateY(0px); } }
+header {
+  background-color: #1dbfa0;
+  padding: 3em 0 5em 0;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3em; }
+  header form {
+    width: 90%;
+    margin: 0 5%;
+    display: block;
+    position: relative; }
+    header form h4 {
+      font-size: 55px;
+      font-weight: 700;
+      text-align: left;
+      margin: 5px 0 28px 5px; }
+    header form h5 {
+      font-size: 17px;
+      font-weight: 300;
+      text-align: left;
+      margin: -30px 0 38px 5px; }
+    header form input {
+      float: left;
+      margin: 0 0 1em 0;
+      width: calc(100% - 1em);
+      height: 42px;
+      border-radius: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.7);
+      outline: none;
+      transition: .3s; }
+    header form select {
+      float: left;
+      margin: 0 0 1em 0;
+      width: calc(100%);
+      height: 42px;
+      border-radius: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.7);
+      outline: none;
+      transition: .3s; }
+    header form input[type=text]:focus {
+      border-color: #ffffff;
+      background: #fff; }
+    header form input[type=submit] {
+      background: #fff;
+      border: none;
+      color: #1dbfa0;
+      height: 45px;
+      width: 100%; }
+    header form input[type=text] {
+      padding: 0 0 0 1em; }
+
+section {
+  margin: 1em 0; }
+  section hr {
+    width: 50px;
+    border: 2px solid #1dbfa0;
+    margin: 1em auto; }
+  section h1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0 25px 0;
+    font-weight: 700; }
+  section h2 {
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0 25px 0;
+    font-weight: regular; }
+
+#info {
+  margin: 4em 0 4em 0; }
+  #info .info {
+    margin: 3em 0 3em 0; }
+    #info .info .infoBox {
+      width: 100%;
+      float: left;
+      text-align: center;
+      margin-bottom: 3.5em; }
+      #info .info .infoBox h3 {
+        font-size: 20px;
+        margin: 0 0 7px 0;
+        font-weight: 300; }
+      #info .info .infoBox p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0 auto;
+        padding: 0 17px;
+        max-width: 320px; }
+      #info .info .infoBox i {
+        color: #fff;
+        background-color: #1dbfa0;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        border-radius: 55px;
+        font-size: 1.2em;
+        margin: 0 5px 20px 0; }
+
+#jumboImages {
+  margin: 3em 0 4em 0; }
+  #jumboImages h6 {
+    font-size: 13px;
+    text-align: center;
+    margin: 30px 0 -5px 0;
+    display: block;
+    font-weight: 300; }
+    #jumboImages h6 span {
+      text-decoration: underline; }
+  #jumboImages .jumboImg {
+    border-radius: 5px;
+    margin: 1em 0 2px 0;
+    width: calc(100%);
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-right: 4px; }
+    #jumboImages .jumboImg:hover {
+      cursor: pointer; }
+    #jumboImages .jumboImg img {
+      width: calc(100% - 4px);
+      transform: scale(1.1);
+      transition: .3s; }
+      #jumboImages .jumboImg img:first-child {
+        border-right: 4px; }
+  #jumboImages .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0;
+    margin: 0; }
+  #jumboImages .jumboImg:hover .overlay {
+    opacity: 1; }
+  #jumboImages .jumboImg:hover .text {
+    font-size: 20px; }
+  #jumboImages .jumboImg:hover img {
+    transform: scale(1.13);
+    webkit-filter: blur(4px);
+    /* Chrome, Safari, Opera */
+    filter: blur(4px); }
+  #jumboImages .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-weight: bold;
+    z-index: 999;
+    transition: .6s; }
+
+#locationBoxes {
+  margin: 1em 0 0 0; }
+  #locationBoxes .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0;
+    margin: 0; }
+  #locationBoxes .locationBoxes {
+    margin: 3em 0 3em 0; }
+    #locationBoxes .locationBoxes .locationBox {
+      width: calc(100%);
+      float: left;
+      text-align: center;
+      margin: 0 0 10px 0;
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px; }
+      #locationBoxes .locationBoxes .locationBox:last-child {
+        margin: 0 0 0 0; }
+      #locationBoxes .locationBoxes .locationBox img {
+        height: 120px;
+        min-height: 220px;
+        width: 100%;
+        transition: .3s;
+        transform: scale(1.03); }
+      #locationBoxes .locationBoxes .locationBox h3 {
+        font-size: 20px;
+        font-weight: 300;
+        position: absolute;
+        top: 40%;
+        /* position the top  edge of the element at the middle of the parent */
+        left: 50%;
+        /* position the left edge of the element at the middle of the parent */
+        transform: translate(-50%, -50%);
+        /* This is a shorthand of
+                                 translateX(-50%) and translateY(-50%) */
+        color: #fff; }
+      #locationBoxes .locationBoxes .locationBox:hover .overlay {
+        opacity: 1;
+        cursor: pointer; }
+      #locationBoxes .locationBoxes .locationBox:hover img {
+        transform: scale(1.04);
+        webkit-filter: blur(2px);
+        /* Chrome, Safari, Opera */
+        filter: blur(2px); }
+
+.featured {
+  max-height: 175px; }
+  .featured:hover .overlay {
+    background-color: rgba(29, 191, 160, 0.15) !important;
+    background-color: rgba(0, 0, 0, 0.3) !important; }
+  .featured:hover h3 {
+    margin-left: 3px;
+    transition: .5s; }
+  .featured:hover p {
+    margin-left: 3px;
+    transition: 1s;
+    background-color: #fff; }
+  .featured h3 {
+    font-size: 17px !important;
+    left: 20px !important;
+    text-align: left !important;
+    transform: none !important;
+    border-radius: 5px;
+    font-weight: bold !important;
+    background-color: rgba(0, 0, 0, 0.45);
+    background-color: #1dbfa0;
+    padding: .3em .4em;
+    transition: .2s; }
+  .featured p {
+    font-size: 11px !important;
+    left: 20px !important;
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    text-align: left !important;
+    transform: none !important;
+    color: #fff;
+    color: #000000;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 0em .4em 0 0;
+    transition: .2s; }
+  .featured i {
+    background-color: #fff;
+    color: #1dbfa0;
+    border-radius: 5px 0 0 5px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin-right: 2px; }
+
+footer {
+  background-color: #1dbfa0;
+  padding: 2em;
+  color: #fff;
+  text-align: center;
+  margin-top: 5em; }
+
+/* Portrait tablet to landscape narrow desktop */
+@media only screen and (min-width: 48em) {
+  #info {
+    margin: 4em 0 4em 0; }
+    #info .info {
+      margin: 3em 0 3em 0; }
+      #info .info .infoBox {
+        width: 33.33%;
+        margin-bottom: 0em; }
+        #info .info .infoBox h3 {
+          margin: 0 0 7px 0; }
+
+  #jumboImages {
+    margin: 5em 0 4em 0; }
+    #jumboImages .jumboImg {
+      margin: 1em 0 0em 0;
+      width: calc(50% - 10px);
+      margin-right: 10px; }
+      #jumboImages .jumboImg img {
+        width: calc(100% - 4px); }
+
+  #locationBoxes {
+    margin: 0em 0 0 0; }
+    #locationBoxes .locationBoxes {
+      margin: 3em 0 3em 0; }
+      #locationBoxes .locationBoxes .locationBox {
+        width: calc(50% - 20px + 10px);
+        margin: 0 10px 10px 0; }
+        #locationBoxes .locationBoxes .locationBox:last-child {
+          margin: 0 0 0 0; } }
+/*Standard desktop */
+@media only screen and (min-width: 62em) {
+  nav {
+    background-color: #1dbfa0;
+    clear: both; }
+    nav img {
+      float: left;
+      width: 55px;
+      margin: 15px; }
+    nav ul {
+      display: block;
+      float: right;
+      margin: 30px 25px 0 0; }
+      nav ul li {
+        display: inline;
+        color: #fff;
+        margin: 0 0 0 15px; }
+
+  .navbar-fixed {
+    display: block; }
+
+  header {
+    padding: 3em 0 5em 0;
+    margin-bottom: 3em; }
+    header form {
+      width: 70%;
+      margin: 0 auto;
+      display: block; }
+      header form h4 {
+        font-size: 70px;
+        margin: 5px 0 28px 5px; }
+      header form h5 {
+        font-size: 17px;
+        margin: -30px 0 28px 5px; }
+      header form input {
+        margin: 0 5px 0 5px;
+        width: calc(40% - 20px - 1em); }
+      header form select {
+        float: left;
+        margin: 0 5px 0 5px;
+        width: calc(40% - 20px - 1em);
+        height: 44.1px; }
+      header form input[type=submit] {
+        width: 20%; }
+      header form input[type=text] {
+        padding: 0 0 0 1em; }
+
+  section {
+    margin: 1em 0; }
+    section h1 {
+      font-size: 25px;
+      margin: 30px 0 25px 0; }
+    section h2 {
+      font-size: 25px;
+      margin: 30px 0 25px 0; }
+
+  #info .info .infoBox p {
+    font-size: 16px; }
+
+  #jumboImages .jumboImg:hover .text {
+    font-size: 29px; }
+  #jumboImages .text {
+    color: white;
+    font-size: 27px;
+    top: 50%;
+    left: 50%; }
+
+  #locationBoxes {
+    margin: 0em 0 0 0; }
+    #locationBoxes .locationBoxes {
+      margin: 3em 0 3em 0; }
+      #locationBoxes .locationBoxes .locationBox {
+        width: calc(33.33% - 20px + 10px);
+        margin: 0 10px 10px 0; }
+        #locationBoxes .locationBoxes .locationBox:last-child {
+          margin: 0 0 0 0; }
+        #locationBoxes .locationBoxes .locationBox img {
+          height: auto;
+          width: 100%;
+          transition: .3s;
+          transform: scale(1.02); }
+        #locationBoxes .locationBoxes .locationBox h3 {
+          font-size: 25px; } }
+/* Large desktop */
+/* XLarge desktop */
+@media only screen and (min-width: 85em) {
+  header {
+    padding: 5em 0 7em 0;
+    margin-bottom: 3em; }
+    header form h4 {
+      font-size: 90px;
+      margin-bottom: 20px; }
+    header form .homepage-cover .home-widget-title {
+      font-size: 90px; }
+    header form h5 {
+      font-size: 20px; } }
+
+/*# sourceMappingURL=styles.css.map */

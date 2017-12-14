@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noibu planet</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.fontawesome.com/48c0e780c5.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="clearfix" id="navbar">
+        <img src="images/logo-white.png" alt="Logo" class="logo">
+        <ul>
+            <li><i class="fa fa-plus" aria-hidden="true"></i> List Store</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            <li>Account <i class="fa fa-chevron-down" aria-hidden="true"></i>
+
+        </ul>
+    </nav>
+    <header>
+        <!--        <h1>Search or browse by category</h1>-->
+        <form action="/action_page.php" class="clearfix">
+            <h4>noibu</h4>
+            <h5>Search for unique boutiques or filter them by category</h5>
+            <input type="text" name="fname" placeholder="What are you looking for?">
+            <!--            <input type="text" name="lname" placeholder="Browse Categories">-->
+            <select name="selectCat">
+               <option value="" disabled selected>Select a category</option>
+               <option value="woman">Woman</option>
+               <option value="men">Men</option>
+               <option value="accessory">Accessory</option>
+           </select>
+            <input type="submit" value="Search">
+        </form>
+
+    </header>
+
+    <div class="wrapper">
+
+        <section id="info">
+
+            <div class="info clearfix">
+                <div class="infoBox">
+                    <h3>
+                        <i class="fa fa-check" aria-hidden="true"></i><br>Unique
+                    </h3>
+                    <p>
+                        Discover local boutiques from all around the world and find pieces that are as unique as you.</p>
+                </div>
+                <div class="infoBox">
+                    <h3>
+                        <i class="fa fa-check" aria-hidden="true"></i><br>Authentic
+                    </h3>
+                    <p>We give you those in-store vibes so you can get that warm fuzzy feeling of experiencing a new boutique from the comfort of your home.
+                    </p>
+                </div>
+                <div class="infoBox">
+                    <h3>
+                        <i class="fa fa-check" aria-hidden="true"></i><br>Togetherness
+                    </h3>
+                    <p> Connect with the growing community of fashion boutiques, bloggers and enthusiasts so you can be part of something close to your heart.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="jumboImages">
+            <h1>Explore and experience boutiques</h1>
+
+            <hr />
+
+            <div class="jumboImages clearfix">
+                <!--                <h6>Login to review stores and create a favourites list. Login | Register</h6>-->
+                <!--                <a href="https://www.noibu.com/listings/?search_categories%5B%5D=130&search_radius=50&search_lat=0&search_lng=0&search_region=#s=1">-->
+                <div class="jumboImg"><img class="shopWomansImg" src="/images/shop-womans.jpg" alt="Shop Womans" />
+                    <div class="text">SHOP WOMANS</div>
+                    <div class="overlay"></div>
+                </div>
+                <!--                </a>-->
+                <!--                <a href="https://www.noibu.com/listings/?search_categories%5B%5D=130&search_radius=50&search_lat=0&search_lng=0&search_region=">-->
+                <div class="jumboImg"><img class="shopMensImg" src="/images/shop-mens.jpg" alt="Shop Mens" />
+                    <div class="text">SHOP MENS</div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <!--</a>-->
+        </section>
+
+
+
+        <section id="locationBoxes">
+            <h2>Explore like never before
+            </h2>
+            <hr>
+            <div class="locationBoxes clearfix">
+
+                <div class="locationBox circle">
+                    <img src="images/ottawa.jpg" alt="">
+                    <div class="overlay">
+                    </div>
+                    <h3>Ottawa
+                    </h3>
+                </div>
+
+                <div class="locationBox circle">
+                    <img src="images/toronto-cn.jpeg" alt="">
+                    <div class="overlay">
+                    </div>
+                    <h3> Toronto
+                    </h3>
+                </div>
+
+                <div class="locationBox circle">
+                    <img src="images/montreal.jpg" alt="">
+
+                    <div class="overlay">
+                    </div>
+                    <h3> Montreal
+                    </h3>
+                </div>
+
+            </div>
+        </section>
+
+        <!--
+        <section id="locationBoxes">
+            <h2>Discover by category
+            </h2>
+            <hr>
+            <div class="locationBoxes clearfix">
+
+                <div class="locationBox">
+                    <img src="images/womans.jpeg" alt="">
+                    <div class="overlay">
+                    </div>
+                    <h3>Womans
+                    </h3>
+                </div>
+
+                <div class="locationBox">
+                    <img src="images/mens.jpeg" alt="">
+                    <div class="overlay">
+                    </div>
+                    <h3> Mens
+                    </h3>
+                </div>
+
+                <div class="locationBox">
+                    <img src="images/acccessories.jpeg" alt="">
+
+                    <div class="overlay">
+                    </div>
+                    <h3> Accessories
+                    </h3>
+                </div>
+
+            </div>
+        </section>
+-->
+
+        <section id="locationBoxes">
+            <h2>Featured boutiques
+
+            </h2>
+            <hr>
+            <div class="locationBoxes clearfix">
+
+                <div class="locationBox featured">
+                    <img src="images/store-1.jpg" alt="">
+                    <div class="overlay">
+                    </div>
+                    <h3>18 Waits
+                    </h3>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Toronto, Ontario</p>
+                </div>
+
+                <div class="locationBox featured">
+                    <img src="images/store-2.jpg" alt="">
+                    <div class="overlay">
+                    </div>
+                    <h3> Katrin Leblond
+                    </h3>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Montreal (St-Laurent)</p>
+
+                </div>
+
+                <div class="locationBox featured">
+                    <img src="images/store-3.jpg" alt="">
+
+                    <div class="overlay">
+                    </div>
+                    <h3> Due West
+                    </h3>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Toronto (Queen Street West)</p>
+
+                </div>
+                <div class="locationBox featured">
+                    <img src="images/store-1.jpg" alt="">
+                    <div class="overlay">
+                    </div>
+                    <h3>18 Waits
+                    </h3>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Toronto, Ontario</p>
+                </div>
+
+                <div class="locationBox featured">
+                    <img src="images/store-2.jpg" alt="">
+                    <div class="overlay">
+                    </div>
+                    <h3> Katrin Leblond
+                    </h3>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Montreal (St-Laurent)</p>
+
+                </div>
+
+                <div class="locationBox featured">
+                    <img src="images/store-3.jpg" alt="">
+
+                    <div class="overlay">
+                    </div>
+                    <h3> Due West
+                    </h3>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Toronto (Queen Street West)</p>
+
+                </div>
+                <div class="locationBox featured">
+                    <img src="images/store-1.jpg" alt="">
+                    <div class="overlay">
+                    </div>
+                    <h3>18 Waits
+                    </h3>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Toronto, Ontario</p>
+                </div>
+
+                <div class="locationBox featured">
+                    <img src="images/store-2.jpg" alt="">
+                    <div class="overlay">
+                    </div>
+                    <h3> Katrin Leblond
+                    </h3>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Montreal (St-Laurent)</p>
+
+                </div>
+
+                <div class="locationBox featured">
+                    <img src="images/store-3.jpg" alt="">
+
+                    <div class="overlay">
+                    </div>
+                    <h3> Due West
+                    </h3>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Toronto (Queen Street West)</p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <footer>
+        <p>Copyright &copy; HNDZN.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+</body>
+
+</html>
